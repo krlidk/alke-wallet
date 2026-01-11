@@ -1,7 +1,7 @@
 # 💰 Alke Wallet - Billetera Digital
 
 Estructura del proyecto:
-```text
+
 alke-wallet/
 │
 ├── css/
@@ -22,6 +22,7 @@ alke-wallet/
 ├── deposit.html        # Módulo de Depósitos
 ├── sendmoney.html      # Módulo de Transferencias
 └── transactions.html   # Historial de Movimientos
+
 
 ## 💿 Instalación
 1.  **Descargar el proyecto:**
