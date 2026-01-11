@@ -2,27 +2,29 @@
 
 Estructura del proyecto:
 
+```text
 alke-wallet/
 │
 ├── css/
-│   └── style.css       # Estilos personalizados y overrides
+│   └── style.css
 │
 ├── js/
-│   ├── login.js        # Lógica de autenticación
-│   ├── menu.js         # Lógica del dashboard principal
-│   ├── deposit.js      # Lógica de depósitos
-│   ├── sendmoney.js    # Lógica compleja de transferencias y contactos
-│   └── transactions.js # Renderizado del historial
+│   ├── login.js
+│   ├── menu.js
+│   ├── deposit.js
+│   ├── sendmoney.js
+│   └── transactions.js
 │
-├── img/                # Recursos gráficos
+├── img/
 │
-├── index.html          # Landing Page
-├── login.html          # Pantalla de Inicio de Sesión
-├── menu.html           # Pantalla Principal
-├── deposit.html        # Módulo de Depósitos
-├── sendmoney.html      # Módulo de Transferencias
-└── transactions.html   # Historial de Movimientos
-
+├── index.html
+├── login.html
+├── menu.html
+├── deposit.html
+├── sendmoney.html
+├── transactions.html
+└── README.md
+```
 
 ## 💿 Instalación
 1.  **Descargar el proyecto:**
