@@ -1,0 +1,109 @@
+
+:root {
+    --primary-color: #0056b3; /* Azul serio */
+    --secondary-color: #6c757d;
+    --success-bg: #d4edda;
+    --error-bg: #f8d7da;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9; /* Gris muy suave de fondo */
+}
+
+/* Tarjetas con efecto moderno */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto hover solo en las tarjetas del menú */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    cursor: pointer;
+}
+
+/* Estilo para el saldo gigante */
+#userBalance {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+/* Inputs de dinero grandes */
+.input-group-text {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Estilos específicos para transacciones */
+.transaction-positive {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.transaction-negative {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* --- ESTILOS PARA AUTOCOMPLETAR (Send Money) --- */
+
+/* El contenedor de sugerencias */
+#suggestionsList {
+    position: absolute; /* Clave para que flote */
+    top: 100%;          /* Aparece justo debajo del input */
+    left: 0;
+    width: 100%;        /* Mismo ancho que el input */
+    z-index: 1050;      /* Un número alto para estar encima de todo */
+    background-color: #ffffff; /* Fondo blanco obligatorio */
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-height: 250px;  /* Si hay muchos, aparece scroll */
+    overflow-y: auto;
+    display: none;      /* Oculto por defecto (jQuery lo muestra) */
+}
+
+/* Cada ítem de la sugerencia */
+.suggestion-item {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+    text-decoration: none !important; /* Quitar subrayado de enlaces */
+    color: #333;
+    display: block;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #e9ecef; /* Color gris al pasar el mouse */
+    color: #0056b3;
+}
+
+/* Estilo para el texto pequeño del banco dentro de la sugerencia */
+.suggestion-item small {
+    display: block;
+    color: #6c757d;
+}
+
+/* Asegurar que el padre tenga posición relativa (Bootstrap lo tiene, pero reforzamos) */
+.form-group.position-relative {
+    position: relative !important;
+}
