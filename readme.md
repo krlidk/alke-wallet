@@ -1,5 +1,6 @@
 # 💰 Alke Wallet - Billetera Digital
 
+Estructura del proyecto:
 ```text
 alke-wallet/
 │
